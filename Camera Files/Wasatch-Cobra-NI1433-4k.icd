@@ -1,25 +1,25 @@
-CameraFile (6.60) {
-   Manufacturer (Awaiba)
-   Model (DemoBoard)
-   CreationDate (20120123152138)
+CameraFile (6.72) {
+   Manufacturer (Wasatch)
+   Model (CobraUDC)
+   CreationDate (20120130132839)
    InterfaceInfo (1433) {
-      AcquisitionWindow (0, 0, 4096, 500)
+      AcquisitionWindow (0, 0, 4096, 1000)
       BinaryThreshold (0, 200)
-      BitDepth (8)
-      BitsPerComponent (8)
+      BitDepth (12)
+      BitsPerComponent (12)
       NumComponents (1)
       NumPhantomComponents (0)
       Unsigned16BitImage (Yes)
       FrameTimeout (1000)
       LUT (Normal)
       LUTTransform (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
-      MaxImageSize (4096, 1024)
+      MaxImageSize (4096, 2000)
       ScanType (LineScan)
       Scaling (1)
       DetectPCLK (Yes)
       EnablePoCL (No)
       FastRearm (Yes)
-      SynchronizeEnables (Yes)
+      SynchronizeEnables (No)
       ConfigDelay (0)
       Interlaced (No)
       Serial {
@@ -30,7 +30,7 @@ CameraFile (6.60) {
          DTR (High)
          RTS (High)
          Stopbits (1)
-         TermChars ()
+         TermChars (\r)
       }
       SignalLevels {
          PGOutput (RS422)
@@ -42,6 +42,13 @@ CameraFile (6.60) {
          CCSourceLine2 (None, 2)
          CCSourceLine3 (None, 3)
       }
+      Bayer {
+         Pattern (None)
+         Algorithm (Bilinear)
+         RedGain (1.000000)
+         GreenGain (1.000000)
+         BlueGain (1.000000)
+      }
       TestImageType (None)
       TestImageFrameBlanking (100)
       TestImageLineBlanking (100)
@@ -50,9 +57,10 @@ CameraFile (6.60) {
       NumCameraTapsPerXZone (2)
       NumCameraYZones (1)
       NumCameraTapsPerYZone (1)
-      TenTapBitMapping (Normal)
+      BitMapping (Standard)
       TimeSlots (1)
-      XZonePixelExtractor (LineEnds)
+      InterleaveYZones (No)
+      XZonePixelExtractor (Left)
       YZonePixelExtractor (Top)
       NeedYChip (Yes)
       NeedZChip (No)
@@ -61,7 +69,6 @@ CameraFile (6.60) {
       DVALHighTrue (Yes)
       DVALMode (1)
       AcquisitionBitstream (Class07.dat)
-      AcquisitionBitstreamCompressed (Yes)
       Tap (0) {
          Position (Normal)
          Start (Left, Top)
@@ -82,7 +89,6 @@ CameraFile (6.60) {
             Start (Low)
          }
          Clock (0x78)
-         RepeatSource (Fixed, 10)
       }
    }
 }

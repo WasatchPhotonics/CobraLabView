@@ -11,7 +11,8 @@ A collection of camera definition files and example LabView projects for use wit
 
 - **Cobra_Serial_Test.vi** - Basic example showing configuration of the device.
 - **Cobra_Front_Panel_Basic.vi** - Basic GUI approach for device configuration.
-- **Cobra_Front_Panel_Vision.vi** - Visualization and configuration GUI example. 
+- **Cobra_Front_Panel_Vision_2k.vi** - Visualization and configuration GUI example for our 2048 pixel cameras.
+- **Cobra_Front_Panel_Vision_4k.vi** - Visualization and configuration GUI example for our 4096 pixel cameras. 
  
 
 ## Required Packages

@@ -1,4 +1,4 @@
-CameraFile (6.64) {
+CameraFile (6.72) {
    Manufacturer (Wasatch)
    Model (CobraUDC)
    CreationDate (20120130132839)
@@ -44,6 +44,7 @@ CameraFile (6.64) {
       }
       Bayer {
          Pattern (None)
+         Algorithm (Bilinear)
          RedGain (1.000000)
          GreenGain (1.000000)
          BlueGain (1.000000)
@@ -68,7 +69,6 @@ CameraFile (6.64) {
       DVALHighTrue (Yes)
       DVALMode (1)
       AcquisitionBitstream (Class07.dat)
-      AcquisitionBitstreamCompressed (Yes)
       Tap (0) {
          Position (Normal)
          Start (Left, Top)
