@@ -1,0 +1,88 @@
+CameraFile (6.60) {
+   Manufacturer (Awaiba)
+   Model (DemoBoard)
+   CreationDate (20120123152138)
+   InterfaceInfo (1433) {
+      AcquisitionWindow (0, 0, 4096, 500)
+      BinaryThreshold (0, 200)
+      BitDepth (8)
+      BitsPerComponent (8)
+      NumComponents (1)
+      NumPhantomComponents (0)
+      Unsigned16BitImage (Yes)
+      FrameTimeout (1000)
+      LUT (Normal)
+      LUTTransform (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+      MaxImageSize (4096, 1024)
+      ScanType (LineScan)
+      Scaling (1)
+      DetectPCLK (Yes)
+      EnablePoCL (No)
+      FastRearm (Yes)
+      SynchronizeEnables (Yes)
+      ConfigDelay (0)
+      Interlaced (No)
+      Serial {
+         Baud (9600)
+         SerialDisabled (No)
+         Databits (8)
+         Parity (N)
+         DTR (High)
+         RTS (High)
+         Stopbits (1)
+         TermChars ()
+      }
+      SignalLevels {
+         PGOutput (RS422)
+      }
+      ControlLinesSource {
+         UseDefaultSource (Yes)
+         CCSourceLine0 (None, 0)
+         CCSourceLine1 (None, 1)
+         CCSourceLine2 (None, 2)
+         CCSourceLine3 (None, 3)
+      }
+      TestImageType (None)
+      TestImageFrameBlanking (100)
+      TestImageLineBlanking (100)
+      NumCameraTaps (4)
+      NumCameraXZones (2)
+      NumCameraTapsPerXZone (2)
+      NumCameraYZones (1)
+      NumCameraTapsPerYZone (1)
+      TenTapBitMapping (Normal)
+      TimeSlots (1)
+      XZonePixelExtractor (LineEnds)
+      YZonePixelExtractor (Top)
+      NeedYChip (Yes)
+      NeedZChip (No)
+      LVALHighTrue (Yes)
+      FVALHighTrue (Yes)
+      DVALHighTrue (Yes)
+      DVALMode (1)
+      AcquisitionBitstream (Class07.dat)
+      AcquisitionBitstreamCompressed (Yes)
+      Tap (0) {
+         Position (Normal)
+         Start (Left, Top)
+      }
+   }
+   Pattern {
+      Action (PG) {
+         Line (0) {
+            Start (Low)
+         }
+         Line (1) {
+            Start (Low)
+         }
+         Line (2) {
+            Start (Low)
+         }
+         Line (3) {
+            Start (Low)
+         }
+         Clock (0x78)
+         RepeatSource (Fixed, 10)
+      }
+   }
+}
