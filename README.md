@@ -5,7 +5,7 @@ A collection of camera definition files and example LabView projects for use wit
 ### Camera Files
 
 - **Wasatch-Cobra-NI1433-2K.icd** - Suitable for WP instruments with a 2048 sensor
-- **Wasatch-Cobra-NI1433-4K.icd** - Suitable for WP instruments with a 2048 sensor
+- **Wasatch-Cobra-NI1433-4K.icd** - Suitable for WP instruments with a 4096 sensor
 
 ### LabView Projects
 
